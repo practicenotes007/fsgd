@@ -1,6 +1,6 @@
 # Full Stack Playground 全栈试验场
 
-Full Stack Playground (fspg) 是一个用于个人全栈技能修炼的代码片段试验场。**该项目不不是完整呈现完整的项目体系，而是专注于技能点的学习和记录**。
+Full Stack Playground (fspg) 是一个用于个人全栈技能修炼的代码片段试验场。该项目专注于技能点的学习和记录，而不是完整呈现项目体系。
 
 ## 技术栈
 
