@@ -21,6 +21,12 @@ npm i -g nomdemon
 nodemon index.js
 ```
 
+## 后端测试Postman 
+工具下载链接
+```
+https://www.postman.com/downloads/
+```
+
 ---
 以下为可能得注意事项：
 
