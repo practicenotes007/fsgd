@@ -4,12 +4,7 @@ import { dirname, join } from 'path';
 import express from "express";
 import bodyParser from "body-parser";
 import morgan from "morgan";
-
-// 自定义中间件
-function custom_logger(req, res, next) {
-    console.log("[custom_logger] req.method: "+ req.method + ", req.url: " + req.url); // 输出日志信息
-    next(); // 调用下一个中间件
-}
+import { custom_logger } from "./custom_logger.js"; // 导入自定义中间件
 
 // 创建 Express 应用
 const app = express();
