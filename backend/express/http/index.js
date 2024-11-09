@@ -3,10 +3,13 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import express from "express";
 import bodyParser from "body-parser";
+import morgan from "morgan";
 
 // 创建 Express 应用
 const app = express();
 const port = 3000; // 定义服务器监听的端口
+
+app.use(morgan("combined")); // 使用 morgan 中间件记录请求日志
 
 // 获取当前文件的目录路径
 const __filename = fileURLToPath(import.meta.url);
