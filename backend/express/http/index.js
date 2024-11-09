@@ -5,11 +5,19 @@ import express from "express";
 import bodyParser from "body-parser";
 import morgan from "morgan";
 
+// 自定义中间件
+function custom_logger(req, res, next) {
+    console.log("[custom_logger] req.method: "+ req.method + ", req.url: " + req.url); // 输出日志信息
+    next(); // 调用下一个中间件
+}
+
 // 创建 Express 应用
 const app = express();
 const port = 3000; // 定义服务器监听的端口
 
 app.use(morgan("combined")); // 使用 morgan 中间件记录请求日志
+
+app.use(custom_logger); // 使用自定义的中间件
 
 // 获取当前文件的目录路径
 const __filename = fileURLToPath(import.meta.url);
