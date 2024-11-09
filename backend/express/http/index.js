@@ -7,6 +7,22 @@ app.get("/", (req, res) => {
     res.send("<h1>Home Page</h1> <p>  Hello world!  </p>");
 });
 
+app.post("/register", (req, res) => {
+    res.sendStatus(200);
+});
+
+app.put("/user/practicenotes007", (req, res) => {
+    res.sendStatus(200);
+});
+
+app.patch("/user/practicenotes007", (req, res) => {
+    res.sendStatus(200);
+});
+
+app.delete("/user/practicenotes007", (req, res) => {
+    res.sendStatus(200);
+});
+
 app.get("/about", (req, res) => {
     res.send("<h1>About Me</h1> <p>Hi, I am Practicenotes. <br /> \
         practicing to be a <br /> ALL-FULL-STACK DESIGNER in 3 years,<br /> \
