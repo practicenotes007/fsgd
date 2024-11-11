@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+  <div>
+    <main class="px-3">
+      <% if (locals.adj && locals.noun) {%>
+        <h1 style="text-align: center;">
+          <%= adj %> <!-- 显示形容词 -->
+            <%= noun %> <!-- 显示名词 -->
+        </h1>
+        <%} else{ %>
+          <h1 style="text-align: center;">Welcome to the Band Generator 🤟</h1> <!-- 默认欢迎信息 -->
+          <% } %>
+
+            <form style="text-align: center;" action="/submit" method="POST">
+              <input type="submit" value="Generate Name" /> <!-- 提交按钮 -->
+            </form>
+    </main>
+  </div>
+  <%- include("partials/footer.ejs") %>

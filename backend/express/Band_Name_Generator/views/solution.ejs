@@ -1,0 +1,17 @@
+<!-- Scroll down for the solution -->
+
+<%- include("partials/solution-header.ejs") %>
+  <% if (locals.adjective && locals.noun) { %>
+    <h1>
+      <%= adjective %> <!-- 显示形容词 -->
+        <%= noun %> <!-- 显示名词 -->
+    </h1>
+    <% } else { %>
+      <h1>Welcome to the Band Generator 🤟</h1> <!-- 默认欢迎信息 -->
+      <% } %>
+
+        <form action="/submit" method="POST">
+          <input type="submit" value="Generate Name" /> <!-- 提交按钮 -->
+        </form>
+
+        <%- include("partials/solution-footer.ejs") %>

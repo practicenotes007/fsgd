@@ -1,0 +1,44 @@
+/* 设置页面的背景颜色和字体 */
+body {
+  background: #222;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  color: hotpink; /* 设置文本颜色为热粉色 */
+}
+
+/* 主内容区域的样式 */
+main {
+  position: absolute; /* 绝对定位 */
+  width: 100%; /* 宽度100% */
+  height: 100%; /* 高度100% */
+  top: 0; /* 顶部对齐 */
+  left: 0; /* 左侧对齐 */
+  display: flex; /* 使用Flexbox布局 */
+  align-items: center; /* 垂直居中对齐 */
+  justify-content: center; /* 水平居中对齐 */
+  flex-direction: column; /* 垂直方向排列 */
+  text-align: center; /* 文本居中对齐 */
+}
+
+/* 标题的样式 */
+h1 {
+  font-size: 3.5rem; /* 字体大小 */
+}
+
+/* 输入按钮的样式 */
+input {
+  appearance: none; /* 去掉默认样式 */
+  -webkit-appearance: none; /* 去掉Webkit默认样式 */
+  border: 0; /* 无边框 */
+  font-size: 0.9rem; /* 字体大小 */
+  background: #888; /* 背景颜色 */
+  padding: 1rem; /* 内边距 */
+  color: white; /* 字体颜色 */
+  cursor: pointer; /* 鼠标指针样式 */
+}
+
+/* 页脚的样式 */
+footer {
+  position: absolute; /* 绝对定位 */
+  bottom: 0; /* 底部对齐 */
+}
